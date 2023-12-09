@@ -82,3 +82,27 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 img:active {
     transform: scale(1.35,1.35)
 }
+img:hover {
+    animation: rotate 1s linear infinite;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+        /*从0度开始*/
+    }
+    100% {
+        transform: rotate(360deg);
+        /*360度结束*/
+    }
+}
+
+:root {
+    --hljs-bg: #282a36;
+}
+.dark {
+    --hljs-bg: #282a36;
+}
+
+pre > code {
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
