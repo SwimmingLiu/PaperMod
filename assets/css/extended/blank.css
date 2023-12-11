@@ -79,21 +79,11 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 .toc li a:hover {
     color: var(--secondary);
 }
-img:active {
+/* img:active {
     transform: scale(1.35,1.35)
-}
+} */
 img:hover {
-    animation: rotate 1s linear infinite;
-}
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-        /*从0度开始*/
-    }
-    100% {
-        transform: rotate(360deg);
-        /*360度结束*/
-    }
+    transform: scale(1.35,1.35)
 }
 
 :root {
